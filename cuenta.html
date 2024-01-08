@@ -43,22 +43,24 @@
             <span class="operation-name">Transferencia</span>
         </a>
     </div>
-    <p class="mov">Movimientos:</p>
+    <p class="mov">Movimientos</p>
     <div id="Header_mov">
-        <div>
+        <div class="account_filter">
             <label for="categorias">Categoria:</label>
             <select id="categorias">
-            <option value="opcion1">Categoria 1</option>
-            <option value="opcion2">Categoria 2</option>
-            <option value="opcion3">Categoria 3</option>
-        </select>
+                <option value="opcion1">Categoria 1</option>
+                <option value="opcion2">Categoria 2</option>
+                <option value="opcion3">Categoria 3</option>
+            </select>
         </div>
-        <div class="account_date-filter">
+        <div class="account_filter">
             <label for="fecha">Fecha:</label>
-            <input id="fecha" name="fecha" type="month">
-            <button class="button">
-                <img src="./assets/search-icon.svg" alt="Search icon">
-            </button>
+            <div class="date-filter-container">
+                <input id="fecha" name="fecha" type="month">
+                <button class="button">
+                    <img src="./assets/search-icon.svg" alt="Search icon">
+                </button>
+            </div>
         </div>
     </div>
     <div id="table_mov">

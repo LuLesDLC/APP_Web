@@ -46,13 +46,15 @@
     #Header_mov {
         font-size: 1rem;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
+        padding: 0 2%;
     }
     
     .mov {
-        font-size: 1rem;
-        margin: 2%;
+        font-size: 2rem;
+        margin: 5% 2% calc(5px + 2%) 2%;
+        text-align: center;
     }
     
     #table_mov {
@@ -68,7 +70,7 @@
         text-align: center;
         width: 100%;
         font-size: 1rem;
-        margin: 0 1%;
+        margin: 0;
     }
     
     th {
@@ -97,17 +99,21 @@
         color: rgba(51, 64, 79, 0.7);
         font-size: 1rem;
     }
-    /*calendario*/
-    
-    .account_date-filter {
-        width: 45%;
+
+    .account_filter {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /*calendario*/
+    .date-filter-container {
+        display: flex;
     }
     
-    .account_date-filter input {
-        height: 1.5rem;
-        width: 50%;
+    .date-filter-container input {
+        height: 2rem;
+        width: calc(125px + 10vw);
         border: 1px solid #fff;
         border-right: none;
         background-color: #ffffffed;
@@ -118,16 +124,19 @@
         transition: all 0.4s;
     }
     
-    .account_date-filter input:focus {
+    .date-filter-container input:focus {
         border: 1px solid #33404F;
     }
     
-    .account_date-filter button {
-        height: 1.5rem;
+    .date-filter-container button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2rem;
         padding: 1% 5%;
     }
     
-    .account_date-filter button img {
+    .date-filter-container button img {
         height: 1rem;
     }
     
@@ -142,8 +151,8 @@
     
     #categorias {
         font-size: 1rem;
-        width: 200px;
-        padding: 4px;
+        height: 2rem;
+        width: calc(125px + 10vw);
         border: 1px solid #fff;
         border-right: none;
         background-color: #ffffffed;
@@ -160,14 +169,35 @@
     #Header_mov_cat {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin: 2%;
-        padding: 1%;
+        justify-content: center;
+        margin: 2% 2% 0 2%;
+        padding: 1% 1% 0% 1%;
+    }
+
+    .category_filter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Configuracion cuenta */
+
+    .button-conf-cuenta {
+        background-color: #00000000;
+        border: 1px solid #FFF;
+        padding: 1% 0;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.4s;
+    }
+    
+    .button-conf-cuenta:hover {
+        background-color: #FFFFFF22;
     }
     
     @media only screen and (max-width: 768px) {
         #table_mov {
-            margin: 0 1%;
+            margin: 0 ;
             font-size: 9px;
         }
         table {
@@ -187,7 +217,7 @@
             font-size: 9px;
         }
         .mov {
-            font-size: 9px;
+            font-size: 1.1rem;
         }
         select {
             color: #33404F;
@@ -195,7 +225,7 @@
         input {
             font-size: 10px;
         }
-        .account_date-filter input {
+        .account_filter input, .date-filter-container input {
             font-size: 10px;
             height: 1.5rem;
         }
@@ -210,5 +240,8 @@
         }
         #categorias option {
             font-size: 10px;
+        }
+        .account_filter button, .date-filter-container button {
+            height: 1.5rem;
         }
     }
