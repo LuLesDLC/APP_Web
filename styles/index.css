@@ -1,0 +1,335 @@
+/* ESTILOS GLOBALES */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-image: url(../assets/background-pattern.svg);
+    background-color: #33404F;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* CLASES GENERALES */
+.button {
+    background-color: #00000000;
+    border: 1px solid #FFF;
+    padding: 1% 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.button:hover {
+    background-color: #FFFFFF22;
+}
+
+.preview {
+    width: 95%;
+    background-color: #E1FFEF59;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 40px;
+    transition: all 0.4s;
+}
+
+.preview:hover {
+    background-color: #E1FFEF35;
+}
+
+.preview-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.preview-info .money {
+    font-size: clamp(1.3rem, 2vw, 3.5rem);
+    font-weight: bold;
+}
+
+.preview .operations {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.preview .operation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(60px + 2vw);
+    height: auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.operation .operation-icon {
+    width: calc(50px + 2vw);
+    height: calc(50px + 2vw);
+    border: 1px solid #33404F;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+.operation:hover .operation-icon {
+    background-color: #D9D9D9AA;
+}
+
+.operation-icon img {
+    height: calc(20px + 1vw);
+    width: auto;
+}
+
+.operation .operation-name {
+    font-size: calc(0.58rem + 0.4vw);
+    margin-top: 5px;
+}
+
+/* BARRA SUPERIOR Y MENU DESPLEGABLE */
+#top-bar-menu-container {
+    background-color: #FFFFFFED;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+}
+
+#app-name {
+    color: #33404F;
+    font-weight: 150;
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+    /* Icono de menu y su correspondiente animacion */
+#menu-icon {
+    position: relative;
+    height: clamp(1rem, 2vw, 3rem);
+    width: clamp(1.5rem, 3vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menu-icon .line {
+    display: block;
+    height: clamp(6%, 10%, 15%);
+    border-radius: 10px;
+    background: #33404F;
+    transition: all 0.4s ease-in-out;
+}
+
+#menu-checkbox:checked ~ #top-bar .line {
+    background: #FFF;
+}
+
+#menu-icon #line1 {
+    align-self: flex-start;
+    width: 50%;
+    transform-origin: 100% 0%;
+    transition: all 0.4s ease-in-out;
+}
+
+#menu-checkbox:checked ~ #top-bar #line1 {
+    width: calc(1.313 * clamp(1rem, 2vw, 3rem));
+    transform: translate(calc(clamp(1.5rem, 3vw, 4rem) - 1.313 * clamp(1rem, 2vw, 3rem))) rotate(-45deg);
+}
+
+#menu-icon #line2 {
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+#menu-checkbox:checked ~ #top-bar #line2 {
+    transform: scaleY(0);
+}
+
+#menu-icon #line3 {
+    align-self: flex-end;
+    width: 50%;
+    transform-origin: 100% 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+#menu-checkbox:checked ~ #top-bar #line3 {
+    width: calc(1.313 * clamp(1rem, 2vw, 3rem));
+    transform: rotate(45deg);
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+    /* Menu desplegable */
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style: none;
+    height: 100vh;
+    width: 100%;
+    background-color: #33404F;
+    transform: translate(150%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: calc(100px + 5vw);
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+}
+
+#menu-checkbox:checked ~ #menu {
+    transform: translateX(0);
+}
+
+#menu li {
+    border: 3px solid #fff;
+    border-left: none;
+    border-right: none;
+    padding: calc(15px + 1vw) 0;
+    cursor: pointer;
+    transition: all 0.4s; 
+}
+
+#menu li:hover {
+    background-color: #FFFFFF22;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+/* TITULO DASHBOARD */
+#section-title {
+    font-size: clamp(2rem, 4vw, 6rem);
+    font-weight: 100;
+    margin: 5% 0;
+    text-align: center;
+}
+
+/* OPCIONES DE VISTA: CATEGORIAS O CUENTAS */
+#view-options a {
+    width: clamp(7rem, 10vw, 32rem);
+    font-size: clamp(1.05rem, 1.5vw, 3rem);
+    border-radius: 10vw;
+    text-decoration: none;
+}
+
+#view-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 40px;
+}
+
+/* CONTENIDO DEL DASHBOARD */
+#content {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: calc(10px + 5vw);
+}
+
+    /* Cuentas */
+.preview-info .account-name {
+    font-size: clamp(1.3rem, 2vw, 3.5rem);
+    margin-bottom: 5%;
+}
+
+.preview-info .bank {
+    font-size: clamp(0.75rem, 1.25vw, 2rem);
+}
+
+    /* Categorías */
+#date-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(10px + 5vw);
+    width: 100vw;
+}
+
+#date-filter input {
+    height: calc(40px + 2vw);
+    width: 60%;
+    border: 1px solid #fff;
+    border-right: none;
+    background-color: #ffffffed;
+    color: #33404F;
+    font-size: clamp(1rem, 1.6vw, 3rem);;
+    outline: none;
+    padding-left: 2%;
+    transition: all 0.4s;
+}
+
+#date-filter input:focus {
+    border: 1px solid #33404F;
+}
+
+#date-filter button {
+    height: calc(40px + 2vw);
+    padding: 1% 5%;
+}
+
+#date-filter button img {
+    height: calc(15px + 1vw);
+}
+
+.preview-info .category-name {
+    font-size: clamp(1.3rem, 2vw, 3.5rem);
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 768px) {
+    .preview {
+        width: 420px;
+        border-radius: 40px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .preview {
+        width: 615px;
+    }
+    .operation .operation-name {
+        font-size: 1.4rem;
+    }
+}

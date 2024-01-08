@@ -1,0 +1,214 @@
+    .exit {
+        height: calc(20px + 1vw);
+    }
+    
+    .exit:hover {
+        background-color: #D9D9D9AA;
+    }
+    
+    .exit img {
+        height: calc(20px + 1vw);
+        width: auto;
+    }
+    
+    .section-title_account {
+        font-size: clamp(2rem, 4vw, 6rem);
+        font-weight: 100;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .account_title {
+        font-size: clamp(2rem, 4vw, 6rem);
+        font-weight: 100;
+        margin: 1rem 0 0 0;
+        text-align: center;
+    }
+    
+    .account_data {
+        font-size: 1rem;
+    }
+    
+    .account_operations {
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 0;
+    }
+    
+    .operation {
+        text-align: center;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #Header_mov {
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .mov {
+        font-size: 1rem;
+        margin: 2%;
+    }
+    
+    #table_mov {
+        font-size: 1rem;
+        padding: 2%;
+    }
+    
+    table {
+        font-size: 1rem;
+        background: rgba(51, 64, 79, 0.7);
+        border-collapse: collapse;
+        color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+        margin: 0 1%;
+    }
+    
+    th {
+        font-size: 1rem;
+        background-color: rgba(31, 43, 54, 0.9);
+        height: 35px;
+        border: none;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+    td {
+        font-size: 1rem;
+        color: rgba(230, 230, 230, 0.6);
+        border: none;
+        height: 30px;
+    }
+    
+    .total {
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: right;
+        padding-right: 2%;
+    }
+    
+    input {
+        color: rgba(51, 64, 79, 0.7);
+        font-size: 1rem;
+    }
+    /*calendario*/
+    
+    .account_date-filter {
+        width: 45%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .account_date-filter input {
+        height: 1.5rem;
+        width: 50%;
+        border: 1px solid #fff;
+        border-right: none;
+        background-color: #ffffffed;
+        color: #33404F;
+        font-size: 1rem;
+        padding-left: 2%;
+        outline: none;
+        transition: all 0.4s;
+    }
+    
+    .account_date-filter input:focus {
+        border: 1px solid #33404F;
+    }
+    
+    .account_date-filter button {
+        height: 1.5rem;
+        padding: 1% 5%;
+    }
+    
+    .account_date-filter button img {
+        height: 1rem;
+    }
+    
+    .account_button {
+        background-color: none;
+    }
+    
+    label {
+        margin-right: 0.5rem;
+        font-size: 1rem;
+    }
+    
+    #categorias {
+        font-size: 1rem;
+        width: 200px;
+        padding: 4px;
+        border: 1px solid #fff;
+        border-right: none;
+        background-color: #ffffffed;
+        color: #33404F;
+        outline: none;
+        transition: all 0.4s;
+    }
+    
+    #categorias option {
+        font-size: 1rem;
+        color: #333;
+    }
+    
+    #Header_mov_cat {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2%;
+        padding: 1%;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        #table_mov {
+            margin: 0 1%;
+            font-size: 9px;
+        }
+        table {
+            font-size: 9px;
+            width: 100%;
+            margin-top: 2%;
+        }
+        th {
+            border: 1px solid rgba(255, 255, 255);
+            font-size: 9px;
+        }
+        td {
+            border: 1px solid rgba(255, 255, 255);
+            font-size: 9px;
+        }
+        #Header_mov {
+            font-size: 9px;
+        }
+        .mov {
+            font-size: 9px;
+        }
+        select {
+            color: #33404F;
+        }
+        input {
+            font-size: 10px;
+        }
+        .account_date-filter input {
+            font-size: 10px;
+            height: 1.5rem;
+        }
+        label {
+            margin-right: 1rem;
+            font-size: 10px;
+        }
+        #categorias {
+            font-size: 10px;
+            width: 5rem;
+            height: 1.5rem;
+        }
+        #categorias option {
+            font-size: 10px;
+        }
+    }
