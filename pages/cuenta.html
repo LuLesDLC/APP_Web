@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/cuenta.css">
+    <title>Cuenta</title>
+</head>
+
+<body>
+    <div id="top-bar-menu-container">
+        <div id="top-bar">
+            <h1 id="app-name">MI · CHAUCHERITA</h1>
+            <a href="index.html" class="exit">
+                <img src="./assets/exit.svg" alt="Exit icon">
+            </a>
+        </div>
+    </div>
+    <div class="account_title">
+        <h2 class="section-title_account ">Mi cuenta</h2>
+        <h3 class="section-title_account ">$103.25</h3>
+        <p class="account_data">Bco.Pichincha</p>
+    </div>
+    <div class="account_operations">
+        <a href="" class="operation">
+            <div class="operation-icon">
+                <img src="./assets/income-icon.svg" alt="Income icon">
+            </div>
+            <span class="operation-name">Ingreso</span>
+        </a>
+        <a href="" class="operation">
+            <div class="operation-icon">
+                <img src="./assets/egress-icon.svg" alt="Egress icon">
+            </div>
+            <span class="operation-name">Egreso</span>
+        </a>
+        <a href="" class="operation">
+            <div class="operation-icon">
+                <img src="./assets/transfer-icon.svg" alt="Transfer icon">
+            </div>
+            <span class="operation-name">Transferencia</span>
+        </a>
+    </div>
+    <p class="subtitle">Movimientos</p>
+    <div id="Header_subtitle">
+        <div class="account_filter">
+            <label for="categorias">Categoria:</label>
+            <select id="categorias">
+                <option value="opcion1">Categoria 1</option>
+                <option value="opcion2">Categoria 2</option>
+                <option value="opcion3">Categoria 3</option>
+            </select>
+        </div>
+        <div class="account_filter">
+            <label for="fecha">Fecha:</label>
+            <div class="date-filter-container">
+                <input id="fecha" name="fecha" type="month">
+                <button class="button">
+                    <img src="./assets/search-icon.svg" alt="Search icon">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="table_container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Num Mov</th>
+                    <th>Cuenta</th>
+                    <th>Categoría</th>
+                    <th>Concepto</th>
+                    <th>Fecha</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mi cuenta</td>
+                    <td>Nómina</td>
+                    <td>Pago de nómina de mi trabajo</td>
+                    <td>01/01/2024</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mi cuenta</td>
+                    <td>Universidad</td>
+                    <td>Libro “Contabilidad básica”</td>
+                    <td>01/01/2024</td>
+                    <td>-$100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mi cuenta</td>
+                    <td>Efectivo</td>
+                    <td>Traspaso entre cuentas</td>
+                    <td>01/01/2024</td>
+                    <td>-$400</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mi cuenta</td>
+                    <td>Universidad</td>
+                    <td>Pago de matrícula universidad</td>
+                    <td>01/01/2024</td>
+                    <td>-$200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
