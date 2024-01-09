@@ -197,17 +197,14 @@
         background-color: #D9D9D9;
     }
 
-    .button-conf-cuenta {
-        background-color: #00000000;
-        border: 1px solid #FFF;
-        padding: 1% 0;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.4s;
-    }
-    
-    .button-conf-cuenta:hover {
-        background-color: #FFFFFF22;
+    .configuration_account_img_table{
+        width: calc(15px + 2vw);
+        height: calc(15px + 2vw);
+        border: 1px solid #33404F;
+        border-radius: 50%;
+        background-color: #D9D9D9;
+        margin: 3%;
+        padding: 1.5%;
     }
     
     @media only screen and (max-width: 768px) {
