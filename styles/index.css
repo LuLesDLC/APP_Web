@@ -34,6 +34,24 @@ body::-webkit-scrollbar {
     background-color: #FFFFFF22;
 }
 
+.submit_button {
+    background-color: #4caf5022;
+    transition: background-color 0.3s ease;
+}
+
+.submit_button:hover {
+    background-color: #45a049;
+}
+
+.cancel_button {
+    background-color: #a0454922;
+    transition: background-color 0.3s ease;
+}
+
+.cancel_button:hover {
+    background-color: #a04549;
+}
+
 .preview {
     width: 95%;
     background-color: #E1FFEF59;
@@ -107,6 +125,42 @@ body::-webkit-scrollbar {
 .operation .operation-name {
     font-size: calc(0.56rem + 0.35vw);
     margin-top: 5px;
+}
+
+.form-container{
+    width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+@media only screen and (min-width: 450px) {
+    .form-container {
+        width: 500px;
+        
+    }
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form_input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 /* BARRA SUPERIOR Y MENU DESPLEGABLE */
@@ -205,7 +259,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: calc(100px + 5vw);
+    gap: calc(25px + 3vw);
     transition: all 0.5s ease-in-out;
     z-index: 2;
 }
@@ -311,7 +365,6 @@ body::-webkit-scrollbar {
 
 .preview-info .category-name {
     font-size: clamp(1.3rem, 2vw, 3.5rem);
-    font-weight: bold;
 }
 
 /* MEDIA QUERIES */

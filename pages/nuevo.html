@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/cuenta.css">
+    <link rel="stylesheet" href="../styles/cuenta_categoria.css">
     <link rel="stylesheet" href="../styles/nuevo.css">
-    <title>Categoría</title>
+
+    <title>Mi Chaucherita</title>
 </head>
 
 <body>
@@ -20,21 +21,17 @@
             </a>
         </div>
     </div>
-    <div id="content">
-        <div class="contenedor">
-            <div id="autogenerado">
-                <h2>ID:</h2>
-                <input type="text" readonly>
-            </div>
-            <div id="entrada">
-                <h2>Nombre:</h2>
-                <input type="text">
-            </div>
-            <div id="botones">
-                <button>Guardar</button>
-                <button>Cancelar</button>
-            </div>
-        </div>
+    <div class="form-container">
+        <form action="confuguracion_cuenta.html" class="form-style">
+            <label class="form_label" for="">ID</label>
+            <input class="form_input" type="text" value="1" readonly>
+            <label class="form_label" for="">Nombre de la cuenta</label>
+            <input class="form_input" type="text" placeholder="Ingrese el nombre de la cuenta">
+            <label class="form_label" for="">Banco asociado</label>
+            <input class="form_input" type="text" placeholder="Ingrese el banco asociado">
+            <input class="button submit_button" type="submit" value="Guardar">
+            <input class="button cancel_button" type="submit" value="Cancelar">
+        </form>
     </div>
 </body>
 
