@@ -4,73 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/cuenta.css">
     <link rel="stylesheet" href="../styles/estados.css">
+    <title>Categoría</title>
 </head>
 
 <body>
-    <div id="content">
-        <div class="tablas">
-            <table class="Tabla-estados">
-                <thead>
-                    <tr>
-                        <th>Cuenta</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <td colspan="2">
-                            <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a
-                                    href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-                        </td>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <td>Banco</td>
-                        <td>$000</td>
-                    </tr>
-                    <tr>
-                        <td>Efectivo</td>
-                        <td>$000</td>
-                    </tr>
-                    <tr>
-                        <td>Debito</td>
-                        <td>$000</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="Tabla-estados">
-                <thead>
-                    <tr>
-                        <th>Categoria</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <td colspan="2">
-                            <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a
-                                    href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
-                        </td>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <td>Universidad</td>
-                        <td>$000</td>
-                    </tr>
-                    <tr>
-                        <td>Comida</td>
-                        <td>$000</td>
-                    </tr>
-                    <tr>
-                        <td>Regalos</td>
-                        <td>$000</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div id="top-bar-menu-container">
+        <input id="menu-checkbox" type="checkbox" />
+        <div id="top-bar">
+            <h1 id="app-name">MI · CHAUCHERITA</h1>
+            <a href="../index.html" class="exit">
+                <img src="../assets/exit.svg" alt="Exit icon">
+            </a>
         </div>
+    </div>
+    <div id="table_container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Num Mov</th>
+                    <th>Cuenta</th>
+                    <th>Categoría</th>
+                    <th>Concepto</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Pago de deuda</td>
+                    <td>-$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Libro “Contabilidad básica”</td>
+                    <td>-$100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Compra de libros</td>
+                    <td>-$400</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Pago de matrícula universidad</td>
+                    <td>-$200</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Regalos de navidad</td>
+                    <td>-$50</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Mantenimiento de laptop personal</td>
+                    <td>-$60</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Pago del servicio de internet</td>
+                    <td>-$35</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Limpieza del coche</td>
+                    <td>-$15</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Pago de tutoria primo</td>
+                    <td>$60</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Mi cuenta</td>
+                    <td>Mi Categoría</td>
+                    <td>Venta de equipo de sonido</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a
+                                href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
     </div>
 </body>
 
