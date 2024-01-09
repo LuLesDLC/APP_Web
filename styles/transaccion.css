@@ -1,12 +1,13 @@
 .categorias-form{
     height: 34px;
     margin-bottom: 16px;
-    color: #999;
+    background-color: #ffffffed;
+    color: #33404F;
     
 }
 
 .categorias-form option{
-    color: #999;
+    color: #333;
 
 }
 

@@ -161,6 +161,8 @@ body::-webkit-scrollbar {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+    background-color: #ffffffed;
+    color: #33404F;
 }
 
 /* BARRA SUPERIOR Y MENU DESPLEGABLE */
