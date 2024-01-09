@@ -197,7 +197,7 @@
         background-color: #D9D9D9;
     }
 
-    .configuration_account_img_table{
+    .configuration_account_img_edit{
         width: calc(15px + 2vw);
         height: calc(15px + 2vw);
         border: 1px solid #33404F;
@@ -205,6 +205,24 @@
         background-color: #D9D9D9;
         margin: 3%;
         padding: 1.5%;
+    }
+
+    .configuration_account_img_edit:hover{
+        background-color: #FFFF99;
+    }
+
+    .configuration_account_img_delete{
+        width: calc(15px + 2vw);
+        height: calc(15px + 2vw);
+        border: 1px solid #33404F;
+        border-radius: 50%;
+        background-color: #D9D9D9;
+        margin: 3%;
+        padding: 1.5%;
+    }
+
+    .configuration_account_img_delete:hover{
+        background-color: #FF6E6E;
     }
     
     @media only screen and (max-width: 768px) {
